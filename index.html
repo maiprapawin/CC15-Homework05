@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card 2</title>
+    <style>
+      body {
+        position: relative;
+      }
+      img {
+        width: 240px;
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      h4 {
+        width: 218px;
+        padding: 12px;
+        margin: 0;
+        text-align: center;
+        border-top: 1px solid rgba(134, 148, 161, 0.5);
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+      }
+
+      .card {
+        border: 1px solid rgba(134, 148, 161, 0.5);
+        border-radius: 5%;
+        width: 240px;
+        margin-top: 24px;
+      }
+      .card::before {
+        content: "X";
+        padding: 8px;
+        font-size: 20px;
+        position: absolute;
+        color: rgba(134, 148, 161, 0.5);
+      }
+
+      .card::after {
+        content: "9";
+        position: absolute;
+        top: -12px;
+        left: 224px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        border: 1px solid none;
+        background-color: red;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://www.svgrepo.com/show/429787/human-man-10.svg"
+        alt="profile"
+      />
+      <h4>A.Rudiger</h4>
+    </div>
+  </body>
+</html>
